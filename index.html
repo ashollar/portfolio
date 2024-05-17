@@ -17,34 +17,88 @@
     <link href="https://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
     <style>
-      .content{
-        display:grid;
-        align-items:center;
-        justify-items:center;
+      body{
+        background-color: rgb(37,37,38);
+        display: block;
+        
+        margin:0px;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+      .section{
+        margin: auto;
+        width:80vw;
+        background-color: rgb(248,248,255);
+        color:rgb(0, 10, 55);
+        border-radius: 6px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        font-family: "roboto";
+        font-size: 10px;
+        padding: 14px;
+        margin-top: 20px;
+
+      }
+      .BH{
+        width:90vw;
+        text-align:right;
+        color:rgb(100,64.7,0);
+        font-family: "corben";
+      }
+      H!{
+        font-size: 18px;
+      }
+      p{
+        color:rgb(1, 50, 32);
+        font-size: 14px;
       }
     </style>
 
   </head>
   
-  <?php include "header.php"?>
-  <body id='page'>
-  
-    <div id='page' class='content'>
+  <body>
+    <H2 class="BH">B"H</H2>
+    <div class="section">
+        <H1>Hi, my name is Aharon Shollar.<br> I am a graduate of Yehsiva schools of pittsburgh, Yeshiva Gedola Lubavitch Toronto, Oholei Torah, and Central Tomchei Tmimim Lubavitch-770.</H1>
+    </div>
+    <div class="section">
+        <H1>my skills</H1>
+        <p>I am familiar with basic HTML, CSS, Javascript, PHP, sql, and python, which i have learned through building my own projects as a hobby. I am self taught.</p>
+        <img src="html-1.svg" height="40px">
+        <img src="w3_css-official.svg" height="40px">
+        <img src="logo-javascript.svg" height="40px">
+        <img src="php-1.svg" height="40px">
+        <img src="mysql-official.svg" height="40px">
+        <img src="python.svg" height="40px">
+    </div>
+    <div class="section">
+        <H1>my goals</H1>
+    </div>
+    <div class="section">
+        <H1>Mivtzoim App</H1><br>
+        <p>I myself along with others, have struggled with organizing and coordinating your mivtzoim routes and activities miserably
+            I hope to make it possible for any bochur to easily organize and share his mivtzoim route and stops. The app is currently offline,
+             as I decided to rebuild it from the ground up. Check out the code on github <a href="https://github.com/ashollar/mivtzoimapp">here</a>.
+        </p>
+        <img src="ma2.png" height="300px">
+        <img src="ma1.png" height="300px">
+    </div>
+    <div class="section">
+        <H1>project 2</H1>
+    </div>
+    <div class="section">
+        <H1>project 3</H1>
+    </div>
+    <div class="section">
+        <H1>3d design</H1>
+    </div>
 
-      <H1 style='line-height: 1;'><span style='font-size:60px;'>Mivtzoim App</span><br>
-      <span style='font-size:16px;'>All your mivtzoim. All in one place.</span></H1>
-      <button class=button style='font-weight:lighter;' onclick="window.location.href='login.php'">log in</button>
-      <button class=button id="install" style='font-weight:lighter;display:none;'>install</button>
 
-      
-      
-</div>
     
     
       
       
 </body >
-<script type="text/javascript" src="pwasw.js"></script>
 
 
 </HTML>
