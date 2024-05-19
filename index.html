@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
-    <meta name="keywords" content="mivtzoim,chabad,lubavitch,jewish,mitzva" />
-    <meta name="description" content="stay organized with your mivtzoim for free, with mivtzoim app!" />    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <meta name="keywords" content="portfolio" />
+    <meta name="description" content="my porfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -159,7 +160,7 @@
             <span id="introText"></span>
             <span id="cursor" style="font-weight: bold;">|</span>
           </p>
-          <span style="display:none;animation: fadeIn 2s;animation-iteration-count: 999;" id="downArrow" class="material-symbols-outlined">keyboard_arrow_down</span>
+          <img width="40px" style="display:none;animation: fadeIn 2s;animation-iteration-count: 999;" id="downArrow" src="scrollDown.png">
           <img class="portrait" style="margin-left:auto;margin-top: auto;" src="me.jpg" width="200px">
           
           
@@ -169,7 +170,7 @@
     <div style="height:100vh;"></div>
     <div class="section" id="section1">
         <H1>my skills</H1>
-        <p>I am familiar with basic HTML, CSS, Javascript, PHP, sql, and python, which i have taught myself through building my own projects as a hobby.</p>
+        <p>I am familiar with basic HTML, CSS, Javascript, PHP, Sql, and Python, which i have taught myself through building my own projects.</p>
         <img src="html-1.png" height="40px">
         <img src="w3_css-official.png" height="40px">
         <img src="logo-javascript.png" height="40px">
@@ -179,7 +180,7 @@
     </div>
     <div class="section" id="section2">
         <H1>my goals</H1>
-        <p>I strive to constantly be learning new skills. I hope to be proficeint in full stack web development, as I love seeing
+        <p>I strive to constantly learn new skills. I hope to be proficient in full stack web development, as I love seeing
           a project through all the way to the end. <br>Knowing that everything is the world is created for a purpose, I hope to use
           technology to make the world a better place, particularly through spreading Judaism and Chassidus.
         </p>
@@ -211,8 +212,8 @@
     <div class="section">
         <H1>shulboard</H1>
         <P>
-          Also while on shlichus, I was inspired to create a shul notice board, and after struggling with existing non jewish
-          platforms, and being turned off by prohibitive prices from existing optiond, I decided to build by own. I hope to eventually develop this
+          Also while on shlichus, I was inspired to create a shul notice board. After struggling with existing
+          platformsand the price point barriers, I decided to build by own. I hope to eventually develop this
           into a flexible, customizable platform that anyone can use, including offline capabilities, so it shouldn't be dependent
           on APIs. (I have therefore been working on Javascript functions for Jewish dates, zmanim, and daily study calculations.)
         </P>
@@ -222,8 +223,12 @@
     </div>
     <div class="section">
         <H1>3d design</H1>
-        <P>I also love using 3D design to create new Jewish and Shlichus related producs. You can see my 3D work on the home page <a href="https://judddaica.com">here</a></P>
+        <P>I also love using 3D design to create new Jewish and Shlichus related producs.</P>
+        <img src="menorah.png" width="20%">
+        <img src="stand.png" width="20%">
+        <img src="bol.png" width="20%">
     </div>
+    <img src="j.png" width="60px" style="float:right;margin:40px;">
 
 
     
@@ -263,7 +268,7 @@
         for (var e of allElements) {
           var yPosition=e.getBoundingClientRect().y;
           var windowHeight=window.innerHeight;
-          e.style.opacity = 1.3-Math.abs((windowHeight/2)-yPosition)/(windowHeight/2);
+          e.style.opacity = ((windowHeight/2)-yPosition)/(windowHeight/2)+.9;
 
         }
 
@@ -322,7 +327,7 @@
 }
 
     var i = 0;
-    const text ="I am a graduate of Yeshiva schools of pittsburgh, Yeshiva Gedola Lubavitch Toronto,#"+
+    const text ="I am a graduate of Yeshiva schools of Pittsburgh, Yeshiva Gedola Lubavitch Toronto,#"+
     "Oholei Torah, and Central Tomchei Tmimim Lubavitch-770.#"+
     "I love being creative, especially when I can make something that serves a greater purpose.#"+
     "When I take on a project, I become fully involved and dedicated, doing whatever it takes to get it done.#"+
