@@ -263,7 +263,6 @@
         for (var e of allElements) {
           var yPosition=e.getBoundingClientRect().y;
           var windowHeight=window.innerHeight;
-          console.log(Math.abs((windowHeight/2)-yPosition)/(windowHeight/2));
           e.style.opacity = 1.3-Math.abs((windowHeight/2)-yPosition)/(windowHeight/2);
 
         }
@@ -303,7 +302,6 @@
       xVelocity=Math.abs(x-lastPos[0]);
       yVelocity=Math.abs(y-lastPos[1]);
       var totalVelocity=xVelocity+yVelocity;
-      console.log(totalVelocity);
       pointer.style.boxShadow="0px 0px 16px 4px rgba(255,79,123,"+totalVelocity/60+")";
       lastPos=[x,y];
       
